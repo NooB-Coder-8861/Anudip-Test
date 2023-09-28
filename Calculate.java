@@ -1,3 +1,7 @@
+/* 
+Sayantan Das 
+*/
+
 import java.util.Scanner;
 
 public class Calculate {
