@@ -7,12 +7,15 @@ import java.util.Scanner;
 public class Calculate {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        //Asking the user to select an option in order to performa task
         System.out.println("Enter 1 for addition");
         System.out.println("Enter 2 for subtraction");
         System.out.println("Enter 3 for multiplication");
         System.out.println("Enter 4 for division");
         int c = sc.nextInt();
 
+        //Will do operations according to the user chosen option
         switch (c) {
             case 1:
                 System.out.println("Enter two numbers to add");
@@ -42,7 +45,7 @@ public class Calculate {
                 double d = d1 / d2;
                 System.out.println("Addition of two given numbers is " + d);
                 break;
-            default:
+            default:                                    // This will print if the user choose any option other than the given one
                 System.out.println("Invalid choice!");
         }
     }
